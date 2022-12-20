@@ -1,8 +1,28 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    block scripts
+head
+  link(rel='stylesheet', href='/stylesheets/home.css')
+  link(href='https://fonts.googleapis.com/css2?family=Oswald&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Lato&display=swap' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/a076d05399.js')
+input#active(type='checkbox')
+label.menu-btn(for='active')
+  span
+label.close(for='active')
+.wrapper
+  ul
+    li
+      a(href='/') Home
+    li
+      a(href='/home') About
+    li
+      a(href='#') Services
+    li
+      a(href='#') Gallery
+    li
+      a(href='#') Feedback
+.content
+  .title
+    | Fullscreen Overlay Navigation Bar
+  p
+    | (Hamburger Menu-2)
   body
     block content
