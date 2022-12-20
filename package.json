@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e * ./bin/www",
-    "watch": "nodemon --ignore public"
+    "start-dev": "nodemon -e * ./bin/www",
+    "watch": "nodemon --ignore public",
+    "start": "node app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
